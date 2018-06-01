@@ -1,0 +1,39 @@
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+{# owl slider js #}
+<script src="js/owl.carousel.min.js"></script>
+
+<script>
+
+    {# owl main slider #}
+    $('.js-girls-slider').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            500:{
+                items:2
+            },
+            840:{
+                items:3
+            },
+            1100:{
+                items:4
+            },
+            1400:{
+                items:5
+            }
+        }
+    });
+
+    // close main popup
+    $('.js-close-popup').on('click', function () {
+       $('.js-popup').addClass('fw-hidden');
+    });
+
+
+</script>

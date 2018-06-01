@@ -1,0 +1,69 @@
+{% extends "layouts/app.twig" %}
+
+{% block pageTitle %}Scan&amp;Go. Делаю покупки еще быстрее – Система самостоятельного сканирования товаров{% endblock %}
+
+{% block content %}
+    <!-- Header block -->
+    {% include "layouts/header.twig" %}
+    <!-- Header block end -->
+    <div class="girls fw-relative fw-text-center fw-pt-45 fw-pb-60">
+        <div class="overlay fw-absolute fw-left-0 fw-top-0 fw-width-1-1 fw-height-1-1"></div>
+        <div class="container fw-relative fw-z-index-1">
+            <h2 class="fw-margin-0 fw-fz-46 fw-color-white fw-text-uppercase fw-GloberBlackItalic fw-font-normal fw-mb-40">Ready to play with you</h2>
+
+            <div class="girls-slider js-girls-slider owl-carousel owl-theme fw-flex fw-flex-left fw-flex-top">
+                {% for i in 1..5 %}
+                <div class="girls-slider-slide fw-margin-auto fw-border-radius-10 fw-black-bg fw-width-270">
+                    <div class="girls-slider-slide-img fw-height-300">
+                        <img src="http://placehold.it/500x500" class="fw-width-1-1 fw-height-1-1 fw-border-radius-10" alt="">
+                    </div>
+
+                    <div class="fw-flex fw-flex-middle fw-flex-space-between fw-pl-20 fw-pr-20 fw-pt-15 fw-pb-20">
+                        <p class="fw-fz-14 fw-color-white fw-RobotoRegular">Girl name, <span>23</span></p>
+                        <a href="#" class="fw-fz-12 fw-flex fw-flex-middle fw-pl-10 fw-pr-10 fw-hover-red-white fw-flex-left fw-height-34 fw-border-radius-130px red-border fw-color-red2">
+                            <span class="icon-message fw-fz-14 fw-mr-15"></span>
+                            Message
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <p class="fw-fz-16 fw-color-white fw-RobotoBold fw-mt-35 fw-mb-0 fw-pb-30">Do you whant see more russian girls for your game?</p>
+
+            <div class="lending-buttons fw-flex fw-flex-center fw-flex-middle">
+                <a href="#" class="fw-width-230 fw-red-bg-hover2 fw-height-44 fw-border-radius-130px fw-bg-color-red2 fw-color-white fw-fz-16 fw-flex fw-flex-center fw-flex-middle fw-RobotoRegular">Look all</a>
+                <a href="#" class="fw-width-230 fw-red-bg-hover2 fw-height-44 fw-border-radius-130px fw-bg-color-red2 fw-color-white fw-fz-16 fw-flex fw-flex-center fw-flex-middle fw-ml-20 fw-RobotoRegular">Download app</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bench-of-spare-girls">
+        <div class="container fw-flex fw-flex-column fw-flex-center fw-flex-middle fw-pt-45 fw-pl-135 fw-pr-135 fw-pb-20">
+            <h2 class="fw-margin-0 fw-text-center fw-fz-46 fw-text-uppercase fw-GloberBlackItalic fw-font-normal fw-mb-20">Bench of spare girls</h2>
+
+            <div class="bench-of-spare-girls-items fw-flex fw-flex-wrap fw-flex-center fw-flex-top fw-max-width-1200">
+                {% for i in 1..8 %}
+                    <div class="bench-of-spare-girls-items-item fw-border-radius-10 fw-ml-30 fw-items-shadow fw-box-shadow-hover fw-mb-30 fw-width-270">
+                        <div class="bench-of-spare-girls-items-item-img fw-height-300">
+                            <img src="http://placehold.it/500x500" class="fw-width-1-1 fw-height-1-1 fw-border-radius-10" alt="">
+                        </div>
+
+                        <div class="name-and-message-wrap fw-flex fw-flex-middle fw-flex-space-between fw-pl-20 fw-pr-20 fw-pt-15 fw-pb-20">
+                            <p class="fw-fz-14 fw-RobotoRegular">Girl name, <span>23</span></p>
+                            <a href="#" class="fw-fz-12 fw-flex fw-flex-middle fw-pl-10 fw-pr-10 fw-hover-red-white fw-flex-left fw-height-34 fw-border-radius-130px red-border fw-color-red2">
+                                <span class="icon-message fw-fz-14 fw-mr-15"></span>
+                                <span class="message">Message</span>
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <a href="#" class="fw-margin-auto fw-width-290 fw-red-bg-hover fw-height-44 fw-mt-20 fw-border-radius-130px fw-bg-color-red2 fw-color-white fw-fz-16 fw-flex fw-flex-center fw-flex-middle fw-RobotoRegular">Look all</a>
+        </div>
+    </div>
+    <!-- footer block -->
+    {% include "layouts/footer.twig" %}
+    <!-- footer block end -->
+{% endblock %}

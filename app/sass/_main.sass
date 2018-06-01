@@ -1,0 +1,77 @@
+@import "mixins/mixins"
+
+body
+	font-family: 'RobotoRegular', sans-serif, arial
+	font-size: 16px
+	margin: 0
+	padding: 0
+
+*
+	box-sizing: border-box
+a
+	text-transform: none
+	text-decoration: none
+
+.language
+	width: fit-content
+	background-color: rgba(0, 0, 0, 0.27)
+	&:hover
+		.language-list
+			right: -12px
+			opacity: 1
+			visibility: visible
+	&-list
+		transition: all .5s ease
+		opacity: 0
+		transition-delay: .2s
+		visibility: hidden
+		top: 50px
+		right: -35px
+
+header
+	background-image: url('../images/header-bg.jpg')
+	-webkit-background-size: cover
+	background-size: cover
+	background-repeat: no-repeat
+
+ul
+	list-style-type: none
+
+.overlay
+	background-color: rgba(0, 0, 0, 0.27)
+
+.girls
+	background-image: url('../images/bg2.jpg')
+	-webkit-background-size: cover
+	background-size: cover
+	background-repeat: no-repeat
+
+.red-border
+	border: solid 1px $colorRed2
+.bench-of-spare-girls-items
+	//margin: 0 auto
+	margin-left: -30px
+.girls
+	&-slider
+		&:first-of-type
+			margin-left: 0
+
+.mobile-close-popup
+	&:before
+		content: ''
+		position: absolute
+		width: 23px
+		height: 1px
+		top: 0
+		border-radius: 0.5px
+		transform: rotate(135deg)
+		background-color: $colorRed2
+	&:after
+		content: ''
+		position: absolute
+		width: 23px
+		top: 0
+		border-radius: 0.5px
+		height: 1px
+		transform: rotate(-135deg)
+		background-color: $colorRed2
