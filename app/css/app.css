@@ -3342,6 +3342,7 @@ header {
   -moz-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 
 ul {
@@ -3456,6 +3457,14 @@ ul {
     margin-bottom: 15px;
   }
 
+  .popup-desktop-main-image {
+    display: none;
+  }
+
+  .popup-mobile-main-image {
+    display: block;
+  }
+
   .desktop-close-popup {
     display: none;
   }
@@ -3496,6 +3505,8 @@ ul {
     -moz-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
+    position: absolute;
+    bottom: 0;
   }
 
   .container h1 {
