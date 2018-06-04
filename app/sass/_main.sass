@@ -20,12 +20,12 @@ a
 			right: -12px
 			opacity: 1
 			visibility: visible
+
 	&-list
 		transition: all .5s ease
 		opacity: 0
 		transition-delay: .2s
 		visibility: hidden
-		top: 50px
 		right: -35px
 
 header
@@ -48,10 +48,49 @@ ul
 
 .red-border
 	border: solid 1px $colorRed2
+
 .bench-of-spare-girls-items
 	margin-left: -30px
+	width: 1150px
+	&-item
+		transition: all .3s ease
+		margin-left: 30px
+		width: 22%
+		&:hover
+			.profile-hover-info
+				height: 100%
+				opacity: 1
+				visibility: visible
+		&-img
+			img
+				object-fit: cover
+			.profile-hover-info
+				height: 0
+				opacity: 0
+				overflow: hidden
+				visibility: hidden
+				transition: all .3s ease
+
 .girls
 	&-slider
+		&-slide
+			&:hover
+				.profile-hover-info
+					height: 100%
+					opacity: 1
+					visibility: visible
+				.girls-slider-slide-img
+					&-main
+						transition: all .3s ease
+						opacity: 0
+			&-img
+				img
+					object-fit: cover
+				.profile-hover-info
+					opacity: 0
+					visibility: hidden
+					transition: all .3s ease
 		&:first-of-type
 			margin-left: 0
+
 
